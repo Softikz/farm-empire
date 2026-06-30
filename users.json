@@ -1,0 +1,69 @@
+{
+  "5748972158": {
+    "name": "𝖚𝖓𝖎𝖎𝖐",
+    "title": "Новичок",
+    "level": 1,
+    "exp": 25,
+    "money": 208,
+    "stars": 12,
+    "beds": 3,
+    "permissions": 0,
+    "luck_tickets": 0,
+    "seeds": {
+      "🥕": 8,
+      "🧅": 2
+    },
+    "harvest": {
+      "🥕": 12
+    },
+    "vip_until": "2026-07-03T00:03:23.414838",
+    "beds_data": [
+      {
+        "crop": "🧅",
+        "planted_at": "2026-06-26T00:03:54.277363",
+        "grow_time": 1,
+        "last_planted": "2026-06-25T18:11:38.676348"
+      },
+      {
+        "crop": "🧅",
+        "planted_at": "2026-06-26T00:03:51.502708",
+        "grow_time": 1,
+        "last_planted": "2026-06-25T18:11:39.911769"
+      },
+      {
+        "crop": "🧅",
+        "planted_at": "2026-06-26T00:03:47.439513",
+        "grow_time": 1,
+        "last_planted": null
+      }
+    ],
+    "chop_guarded": [],
+    "permit_pending": null,
+    "permit_ready": false,
+    "tutorial_complete": true,
+    "play_time": "0ч",
+    "registered_at": "2026-06-25T18:02:34.002195",
+    "quests": {
+      "completed": [
+        "first_harvest"
+      ],
+      "active": "first_money",
+      "progress": {
+        "first_money": 0
+      },
+      "planted_types": []
+    },
+    "daily_tasks": {
+      "date": "2026-06-26",
+      "current": {
+        "task_visit_3": 0,
+        "task_harvest_3": 0,
+        "task_clear_2": 0
+      },
+      "claimed": {}
+    },
+    "level_reward_1": true,
+    "vip_request_pending": false,
+    "vip_auto_renew": false
+  }
+}
