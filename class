@@ -1,0 +1,25 @@
+import tkinter as tk
+from random import randint, choice, uniform
+
+r = tk.Tk(); r.geometry("600x400")
+c = tk.Canvas(r, width=600, height=400, highlightthickness=0); c.pack()
+
+tk.Label(r, text="ВЫ ГОЛОСУЕТЕ ЗА ЕР?", font=("Arial", 22, "bold")).place(relx=.5, y=60, anchor="center")
+
+def go():
+    ps = [[c.create_oval(x:=randint(0,600), y:=randint(-300,-10), x+s, y+s,
+          fill=choice(["red","blue","green","yellow","purple","orange","pink","cyan"]), outline=""),
+          uniform(3,9), uniform(-1.5,1.5)] for s in [randint(5,12)] for _ in range(80)]
+    def anim():
+        for p in ps[:]:
+            c.move(p[0], p[2], p[1])
+            if c.coords(p[0])[1] > 700: c.delete(p[0]); ps.remove(p)
+        if ps: r.after(20, anim)
+    anim()
+
+tk.Button(r, text="Да", font=("Arial",16,"bold"), bg="#4CAF50", fg="white", width=10, command=go).place(relx=.3, rely=.75, anchor="center")
+b = tk.Button(r, text="Нет", font=("Arial",16,"bold"), bg="#f44336", fg="white", width=10)
+b.place(relx=.7, rely=.75, anchor="center")
+b.bind("<Enter>", lambda e: b.place(x=randint(10,500), y=randint(10,340)))
+
+r.mainloop()
